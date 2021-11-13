@@ -10,8 +10,9 @@ What the app does:
 ## Tech Stack
 
 - JavaScript
-- CSS
+- CSS with BEM naming convention
 - React.js
+- RWD
 
 ## Getting Started with Create React App
 
