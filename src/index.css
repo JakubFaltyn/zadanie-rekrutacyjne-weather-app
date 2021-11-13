@@ -5,6 +5,10 @@
           box-sizing: border-box;
 }
 
+html {
+  font-size: 10px;
+}
+
 body {
   font-family: 'montseratt', sans-serif;
 }
@@ -43,7 +47,7 @@ main {
 }
 .location-info__location {
   color: #fff;
-  font-size: 90px;
+  font-size: 9rem;
   font-weight: 700;
   text-align: center;
   text-shadow:  3px 3px rgba(50,50,70,0.5);
@@ -51,7 +55,7 @@ main {
 
 .location-info__date {
   color: #fff;
-  font-size: 30px;
+  font-size: 3rem;
   font-weight: 400px;
   font-style: italic;
   margin: 30px auto;
@@ -60,7 +64,7 @@ main {
 }
 
 .location-info__date h1{
-  font-size: 40px;
+  font-size: 4rem;
 }
 
 .weather-info{
@@ -86,21 +90,31 @@ main {
 
 .weather-info__humidity{
   color: #fff;
-  font-size: 48px;
+  font-size: 4.8rem;
   font-weight: 700;
   text-shadow: 3px 3px rgba(50,50,70,0.5);
 }
 
 .weather-info__temp h1{
   color: #fff;
-  font-size: 60px;
+  font-size: 6rem;
   font-weight: 700;
   text-shadow: 3px 3px rgba(50,50,70,0.5);
 }
 
 .weather-info__humidity h1{
   color: #fff;
-  font-size: 50px;
+  font-size: 5rem;
   font-weight: 700;
   text-shadow: 3px 3px rgba(50,50,70,0.5);
+}
+
+@media only screen and (max-width: 490px) {
+  html {
+    font-size: 5px;
+  }
+
+  .weather-info {
+    min-width: 250px;
+  }
 }

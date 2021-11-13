@@ -17,7 +17,7 @@ function App() {
         .then(result => {
           setWeather(result);
           console.log(result);
-        });
+        })
     }
   }
 
@@ -26,7 +26,9 @@ function App() {
         <div className="single-select">
           <select
           value={city}
-          onChange={e => {data(e.target.value); setCity(e.target.value)}}>
+          onChange={e => {data(e.target.value); setCity(e.target.value);
+            setInterval(function(){ data(e.target.value); }, 10000);
+          }}>
           {options.map(o => (
             <option key={o.value} value={o.value}>{o.label}</option>
           ))}
