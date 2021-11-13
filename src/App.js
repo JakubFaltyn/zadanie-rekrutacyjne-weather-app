@@ -35,9 +35,9 @@ function App() {
         {(typeof weather.list != "undefined") ? (
         <div>
         <div className="location-info">
-          <div className="location-info__location">{weather.city.name}</div>
+          <div className="location-info__location">{city}</div>
           <div className="location-info__date">
-            <h1>Temperature: </h1>
+            <h1>Date: </h1>
             {weather.list[0].dt_txt}
             </div>
         </div>

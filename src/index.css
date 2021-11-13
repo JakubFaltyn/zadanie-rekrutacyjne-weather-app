@@ -1,7 +1,8 @@
 * {
   margin:0;
   padding:0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
@@ -9,11 +10,18 @@ body {
 }
 
 main {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   justify-items: center;
-  background-image: url('./assets/beach-nature-clean-water-clouds-blue-sky-1080P-wallpaper-middle-size.jpg');
+  background-image: url('./assets/background.jpeg');
   background-size: cover;
   background-position:bottom;
   min-height: 100vh;
@@ -26,9 +34,16 @@ main {
   margin: 0 0 75px;
 }
 
+.single-seect select {
+    height: 40px;
+    width: 100px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;       /* Remove default arrow */
+}
 .location-info__location {
   color: #fff;
-  font-size: 50px;
+  font-size: 90px;
   font-weight: 700;
   text-align: center;
   text-shadow:  3px 3px rgba(50,50,70,0.5);
@@ -36,27 +51,37 @@ main {
 
 .location-info__date {
   color: #fff;
-  font-size: 20px;
+  font-size: 30px;
   font-weight: 400px;
   font-style: italic;
+  margin: 30px auto;
   text-align: center;
   text-shadow:  2px 2px rgba(50,50,70,0.5);
 }
 
+.location-info__date h1{
+  font-size: 40px;
+}
+
 .weather-info{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin: 30px auto;
   background-color: rgba(255,255,255,0.4);
   border-radius: 16px;
-
-  padding: 15px 25px;
   color: #fff;
+  width: 40vw;
+  min-width: 450px;
   font-size: 100px;
   font-weight: 900;
-
   text-shadow:  3px 6px rgba(50,50,70,0.5);
-  box-shadow: 3px 6px rgba(0,0,0,0.2);
+  -webkit-box-shadow: 3px 6px rgba(0,0,0,0.2);
+          box-shadow: 3px 6px rgba(0,0,0,0.2);
 }
 
 .weather-info__humidity{
