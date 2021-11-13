@@ -1,5 +1,7 @@
 ## Weather app
 
+Check out this website: https://zadanie-rekrutacyjne-weather.herokuapp.com/
+
 What the app does:
 
 - Contains single select with options "London", "München"
